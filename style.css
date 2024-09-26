@@ -171,80 +171,67 @@ nav ul li a:hover {
 }
 
 /* Contact Section */
-.contact-section {
-  padding: 60px 0;
-  background-color: #e0f7fa; /* Light blue background */
-  text-align: center;
+/* Contact Section Styles */
+#contact {
+  background-color: #f0f8ff; /* Light blue background */
+  padding: 40px 20px; /* Padding around the section */
+  text-align: center; /* Center text */
 }
 
-.contact-section h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
-  color: #007bff; /* Blue heading */
+#contact h2 {
+  font-size: 2.5em; /* Larger font size for the header */
+  color: #003366; /* Dark blue color for the header */
+  margin-bottom: 20px; /* Space below the header */
 }
 
-.contact-section p {
-  font-size: 18px;
-  margin-bottom: 40px;
-  color: #333;
+#contact p {
+  font-size: 1.2em; /* Font size for the paragraph */
+  color: #333; /* Dark gray color for text */
+  margin-bottom: 30px; /* Space below the paragraph */
 }
 
-form {
-  max-width: 600px;
-  margin: 0 auto;
-  background: #fff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
-  transition: transform 0.3s ease; /* Smooth transition */
+/* Flex container for centering the iframe */
+.contact-form-container {
+  display: flex; /* Flexbox layout */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically if needed */
 }
 
-form:hover {
-  transform: scale(1.02); /* Slight zoom on hover */
+/* iframe styles */
+#contact iframe {
+  width: 100%; /* Full width responsive */
+  max-width: 640px; /* Maximum width for the iframe */
+  height: 800px; /* Set a height that can accommodate most content */
+  border: none; /* No border for iframe */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  border-radius: 8px; /* Rounded corners */
+  overflow: auto; /* Allow scrolling within the iframe */
 }
 
-.form-group {
-  margin-bottom: 20px;
-  text-align: left;
+/* Hide scrollbar for Chrome, Safari, and Opera */
+#contact iframe::-webkit-scrollbar {
+  width: 0; /* Set width to 0 to hide the scrollbar */
 }
 
-.form-group label {
-  font-size: 16px;
-  color: #333;
-  display: block;
-  margin-bottom: 5px;
+/* Hide scrollbars for Firefox */
+#contact iframe {
+  scrollbar-width: none; /* For Firefox */
 }
 
-.form-group input, .form-group textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-  color: #333;
-  background: #f8f9fa;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth focus effect */
-}
 
-.form-group input:focus, .form-group textarea:focus {
-  border-color: #007bff; /* Blue border on focus */
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle glow */
-}
+/* Optional: Add a responsive design */
+@media (max-width: 768px) {
+  #contact iframe {
+      height: 600px; /* Reduced height for smaller screens */
+  }
 
-.btn-primary {
-  background: #007bff;
-  color: #fff;
-  padding: 12px 24px;
-  border-radius: 5px;
-  font-weight: 600;
-  transition: background 0.3s ease, transform 0.3s ease;
-  display: inline-block;
-  cursor: pointer;
-}
+  #contact h2 {
+      font-size: 2em; /* Smaller font size for header */
+  }
 
-.btn-primary:hover {
-  background: #0056b3; /* Darker blue on hover */
-  transform: scale(1.05);
+  #contact p {
+      font-size: 1em; /* Smaller font size for paragraph */
+  }
 }
 
 .gif-section {
